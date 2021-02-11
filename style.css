@@ -1,5 +1,42 @@
+body {
+  position: relative;
+}
+
 .statistics span {
   display: block;
+}
+/* The animation code */
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100%; top:0px; transform: translateX(-100%);}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:100%; transform: translateY(-100%);}
+  83%  {background-color:grey; left:74%; top:100%; transform: translateX(-100%);transform: translateY(-100%);}
+  90% {background-color:red; left:50%; top:50%;}
+  100% {background-color:pink; left:0%; top:0%;}
+}
+
+
+/* The element to apply the animation to */
+
+.init {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-style: italic;
+  font-size: xxx-large;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+.statistics h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-style: italic;
 }
 
 .wave {
@@ -21,6 +58,7 @@
   }
   100% {
     transform: translate(-50%, -50%) scale(0) rotate(10deg);
+    opacity: 0;
   }
   10%,
   64% {
@@ -30,4 +68,56 @@
   90% {
     transform: translate(-50%, -50%) scale(1) rotate(-10deg);
   }
+}
+
+@keyframes quote {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+  animation-iteration-count:1;
+  animation: 2s quote;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bye {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px;
+  min-height: 100px;
+  background-color: pink;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.card > .author {
+  margin-top: 5px;
+  display: block;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: end;
 }

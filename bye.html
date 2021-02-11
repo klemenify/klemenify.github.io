@@ -1,13 +1,79 @@
 <html>
   <head>
+    <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+   
+    <div class="cards">
+      <div class="card">
+        "Thanks Klemen for being this awesome person and driving us to a much happier place with all your input! Wish you all the luck for your next adventure! (And watch out, we might steal you for Fixa again!)"
+        <span class="author">Balazs</span>
+      </div>
+      <div class="card">
+        "Thank you Klemen, for all your help in bringing Fixa into this world. <img src="/assets/babyyoda.png" style="width: 20px; height: 20px;"> Your problem solving, quick thinking and deep knowledge really helped move this product forward. Thank you for your positive attitude and being easy to work with ✨"
+        <span class="author">Annamette</span>
+      </div>
+      <div class="card">
+        "You have been instrumental Klemen in making FIXA into what it is today. It's been a pleasure having you in our team and I wish you all the best for the future 💪  Thank you! 🙏"
+        <span class="author">Fredrik</span>
+      </div>
+      <div class="card">
+       "Klems!
+When hooks 🪝 become crooks,
+causing cracks in the stacks,
+we will miss you dearly, 💚
+your skill in seeing hook bugs clearly. 👀
+Thank you for making and shaping Fixa 🔨 and our team.
+Now 'tis soon time for your new project to shine and beam! ☀️"
+        <span class="author">Simon</span>
+      </div>
+      <div class="card">
+        <span class="author">
+      </div>
+      <div class="card">
+        <span class="author">
+      </div>
+      <div class="card">
+        <span class="author">
+      </div>
+      <div class="card">
+        <span class="author">
+      </div>
+      <div class="card">
+        <span class="author">
+      </div>
+
+    </div>
     <div class="bye">
       <button id="dontClick">Don't click me</button>
     </div>
     <img class="wave" src="./waving-hand.png" style="display: none;">
+    <pre class="quote">
+    const arr = [
+      { message: 'All' },
+      { message: 'you' },
+      { message: 'need' },
+      { message: 3 },
+      { message: {} },
+      { message: 'is' },
+      { message: 'map,' },
+      { message: 'filter,' },
+      { message: 'and' },
+      { message: 'reduce' }
+    ];
+    
+    const saying = arr
+      .map(elem => elem.message)
+      .filter(word => typeof(word) === 'string')
+      .reduce((accumulator, elem) => accumulator += ` ${elem}`, '');
+    
+    console.log(`"${saying}" -- Klemen`);
+
+    </pre>
     <script src="index.js"></script>
+    <script>
+    </script>
   </body>
 </html>
