@@ -2,8 +2,61 @@ body {
   position: relative;
 }
 
+@keyframes stats {
+  0% {
+    transform: translate(-50%, -50%)  rotate(-10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%)  rotate(10deg);
+  }
+}
+
+.statistics {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: 1s stats ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 75%;
+}
+
+.statistics > * {
+  text-align: center;
+}
+
 .statistics span {
+  font-size: 20px;
+  margin: 15px;
   display: block;
+}
+
+span.green {
+  color: green;
+}
+
+span.red {
+  color: red;
+}
+
+span.pink {
+  color: pink;
+}
+
+span.blue {
+  color: #003399;
+}
+
+span.yellow {
+  color: #ffcc00;
+}
+
+span.pink {
+  color: pink;
+}
+
+a.pink {
+  color: pink !important;
 }
 /* The animation code */
 @keyframes example {
@@ -37,6 +90,7 @@ body {
 .statistics h1 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-style: italic;
+  color: red;
 }
 
 .wave {
@@ -94,6 +148,10 @@ body {
   animation: 2s quote;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  background-color: #003399;
+  color: #ffcc00;
+  border-radius: 10px;
+  padding: 12px;
 }
 
 .cards {

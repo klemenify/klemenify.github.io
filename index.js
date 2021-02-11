@@ -25,7 +25,7 @@
       const saying = arr
         .map((elem) => elem.message)
         .filter((word) => typeof word === "string")
-        .reduce((accumulator, elem) => (accumulator += ` ${elem}`), "");
+        .reduce((accumulator, elem) => (accumulator += `${elem} `), "");
 
       console.log(`"${saying}" -- Klemen`);
     }, 3000);
