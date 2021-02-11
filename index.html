@@ -7,6 +7,8 @@
     <div class="init">
       <span>Find me if you can</span>
     </div>
+
+    <div class="error">Try again!</div>
     <script>
       const url = window.location.hostname.includes("localhost") ?
         `${window.location.protocol}//${window.location.hostname}:${window.location.port}`
@@ -17,6 +19,16 @@
 			"font-style: italic; font-family: 'american typewriter';" +
 			"text-shadow: 1px 1px 3px fuchsia; padding: 20px; padding-right: 40px;"
       );
+
+      const text = document.querySelector('.init')
+      const error = document.querySelector('.error')
+
+      text.addEventListener('click', () => {
+        error.style.display = 'flex'
+        setTimeout(() => {
+          error.style.display = ''
+        }, 4000)
+      }) 
     </script>
   </body>
 </html>

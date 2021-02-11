@@ -96,7 +96,7 @@ a.pink {
   position: relative;
   background-color: red;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   display: inline-block;
   padding: 10px 20px;
@@ -208,4 +208,38 @@ a.pink {
   display: block;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: end;
+}
+
+@keyframes error {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(-50%, -50%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0) translate(-50%, -50%);
+  }
+}
+
+.error {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 200px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: error 3s;
+  animation-fill-mode: forwards;
+  font-size: 30px;
 }
