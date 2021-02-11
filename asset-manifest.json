@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.94e43efb.chunk.css",
+    "main.js": "/static/js/main.0ba43d90.chunk.js",
+    "main.js.map": "/static/js/main.0ba43d90.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2739f220.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2739f220.js.map",
+    "static/js/2.6cf2ee82.chunk.js": "/static/js/2.6cf2ee82.chunk.js",
+    "static/js/2.6cf2ee82.chunk.js.map": "/static/js/2.6cf2ee82.chunk.js.map",
+    "static/js/3.908f6dfe.chunk.js": "/static/js/3.908f6dfe.chunk.js",
+    "static/js/3.908f6dfe.chunk.js.map": "/static/js/3.908f6dfe.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.94e43efb.chunk.css.map": "/static/css/main.94e43efb.chunk.css.map",
+    "static/js/2.6cf2ee82.chunk.js.LICENSE.txt": "/static/js/2.6cf2ee82.chunk.js.LICENSE.txt",
+    "static/media/klemen-face.4d3eb48d.png": "/static/media/klemen-face.4d3eb48d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2739f220.js",
+    "static/js/2.6cf2ee82.chunk.js",
+    "static/css/main.94e43efb.chunk.css",
+    "static/js/main.0ba43d90.chunk.js"
+  ]
+}
