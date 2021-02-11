@@ -5,14 +5,16 @@
   </head>
   <body>
     <div class="statistics">
-      <h1>This is what you have done!</h1>
-      <span>682 commits</span>
-      <span class="green">124,388 lines added</span>
-      <span class="red">87,764 lines removed</span>
-      <span class="pink" >1 <a class="pink" href="https://isitpinkfridayyet.com/">isitpinkfridayyet.com</a> created</span>
-      <span class="yellow">1 new automation language created</span>
-      <span class="blue">16 team members with heavy hearts</span>
-      <span>100% genius</span>
+      <h1 class="stats-header"></h1>
+      <div>
+        <span>682 commits</span>
+        <span class="green">124,388 lines added</span>
+        <span class="red">87,764 lines removed</span>
+        <span class="pink" >1 <a class="pink" href="https://isitpinkfridayyet.com/">isitpinkfridayyet.com</a> created</span>
+        <span class="yellow">1 new automation language created</span>
+        <span class="blue">16 team members with heavy hearts</span>
+        <span>100% genius</span>
+      </div>
     </div>
     <script>
             const url = window.location.hostname.includes("localhost") ?
@@ -24,6 +26,19 @@
 			"font-style: italic; font-family: 'american typewriter';" +
 			"text-shadow: 1px 1px 3px fuchsia; padding: 20px; padding-right: 40px;"
       );
+
+      const text = 'This is what you have done!';
+
+      const header = document.querySelector('.stats-header')
+
+      text.split('').forEach((c, i) => {
+        setTimeout(() => {
+          const child = document.createElement('span')
+          child.innerText = c
+          header.appendChild(child) 
+        }, (100 * i))
+      })
+
     </script>
   </body>
 </html>

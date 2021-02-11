@@ -11,7 +11,7 @@ body {
   }
 }
 
-.statistics {
+.statistics > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,6 +29,23 @@ body {
   font-size: 20px;
   margin: 15px;
   display: block;
+}
+
+@keyframes stats-header {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.stats-header > span {
+  display: inline;
+  font-size: 45px;
+  margin: 0;
+  animation: 2s stats-header;
 }
 
 span.green {
@@ -157,20 +174,33 @@ a.pink {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 25px;
+  justify-items: center;
+  align-items: start;
+  margin: auto;
+  margin-top: 30px;
+  width: 50%
 }
 
 .bye {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bye > button {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .card {
   padding: 20px;
-  min-height: 100px;
   background-color: pink;
   border-radius: 10px;
   font-style: italic;
+  width: 12vw;
+  min-width: 200px;
 }
 
 .card > .author {
